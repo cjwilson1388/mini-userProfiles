@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="userProfiles">
+<head>
+  <title>Document</title>
+</head>
+
+<body ng-controller="mainControl">
+
+<ul ng-repeat="user in users">
+	<li>
+	<h2>{{user.first_name}} {{user.last_name}}</h2>
+	<img ng-src="{{user.avatar}}">
+	<hr />
+	</li>
+
+</ul>
+
+
+<script src="https://code.angularjs.org/1.3.4/angular.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="service.js"></script>
+
+</body>
+</html>
